@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Serif:700');
+
+body {
+    margin: 0;
+}
+
+nav {
+    background: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    height: 54px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+nav a {
+    color: rgb(39, 39, 39);
+    padding: 8px 20px;
+    margin: 8px 0;
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s;
+    border-radius: 50px;
+}
+
+nav a#booking {
+    color: white;
+    background: rgb(0, 132, 255);
+    float: right;
+    margin: 8px 0px 8px 20px;
+}
+
+nav a.social {
+    float: right;
+    padding: 3px 6px;
+    font-size: 26px;
+    color: rgb(68, 68, 68)
+}
+
+nav a i {
+    margin-right: 4px;
+}
+
+nav a.social i {
+    margin: 0;
+}
+
+nav a:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a.social:hover {
+    box-shadow: 0 0 0 transparent;
+    color: rgb(0, 132, 255);
+}
+
+nav a#booking:hover {
+    background: white;
+    color: rgb(0, 132, 255);
+}
+
+header {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 60%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1531901783755-825e82c0d762?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 12vw 200px;
+}
+
+header h1 {
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 48px;
+    max-width: 700px;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 28px;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+header a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+
+article {
+    border-radius: 10px;
+    background: white;
+    max-width: 1200px;
+    margin: -100px auto 40px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+article div.content {
+    padding: 20px;
+}
+
+article div.image#startups {
+    background: url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+article div.content h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 42px;
+    margin: 0;
+}
+
+article div.content p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+article div.content a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    margin-top: 10px;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article form label {
+    display: block;
+    font-family: 'Lato',
+        sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 22px;
+    margin: 6px 0 4px;
+}
+
+article form input {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: block;
+    font-family: 'Lato';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+
+article form textarea {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: block;
+    font-family: 'Lato';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    resize: none;
+    height: 180px;
+    width: 80%;
+}
+
+article form button {
+    display: inline-block;
+    font-family: 'Lato',
+        sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgb(0, 132, 255);
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    border: 0;
+}
+
+aside {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 60%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1531901783755-825e82c0d762?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 30px 12vw 110px;
+}
+
+
+aside h1 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 48px;
+    margin: 0 auto;
+}
+
+aside p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 28px;
+    max-width: 600px;
+    margin: 10px auto 0;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+aside a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section {
+    max-width: 1200px;
+    margin: -100px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+section#pricing {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section div {
+    position: relative;
+    background: white;
+    padding: 0;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+section#pricing>div {
+    margin: 40px 0;
+    background: white;
+}
+
+section#pricing div:nth-last-of-type(2) {
+    transform: scale(1.075);
+    z-index: 20;
+}
+
+section div.image {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1531901783755-825e82c0d762?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80");
+    background-position: center;
+    background-size: cover;
+    min-height: 240px;
+    margin: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+section div h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+    margin: 0;
+    padding: 20px 20px 8px;
+}
+
+section#pricing>div h1 {
+    padding: 0 30px 12px;
+    line-height: 24px;
+}
+
+section div h2 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 20px 8px;
+
+}
+
+section#pricing>div h2 {
+    font-family: 'Lato', sans-serif;
+    margin: 0px 30px 8px;
+    color: rgb(128, 128, 128);
+    padding: 12px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+}
+
+section div h3 {
+    font-family: 'PT Serif', serif;
+    color: rgb(0, 132, 255);
+    font-size: 48px;
+    margin: 0;
+    padding: 20px 20px 8px;
+}
+
+section#pricing>div h3 {
+    padding: 12px 30px 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+section#pricing>div h3 span {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+}
+
+section div p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 0;
+    padding: 0 20px 8px;
+}
+
+section#pricing>div p {
+    padding: 0 30px 8px;
+}
+
+section#faq>div p {
+    display: none;
+}
+
+section div h4 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 16px;
+    margin: 0;
+    padding: 0 20px 8px;
+
+}
+
+section#pricing>div h4 {
+    padding: 20px 30px 8px;
+    text-transform: uppercase;
+    color: rgb(0, 132, 255);
+}
+
+
+section div a, section div button {
+    border: 0;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px 30px;
+    transition: .2s;
+}
+
+section#pricing>div a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgb(0, 132, 255);
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 30px;
+    transition: .2s;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section div a:hover,  section div button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.contact_cards {
+    max-width: 1400px;
+    margin: -100px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div.contact_cards>div {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: white;
+    transition: .2s;
+}
+
+
+div.contact_cards div i {
+    font-size: 64px;
+    color: rgb(0, 132, 255);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.contact_cards div img {
+    display: block;
+    border-radius: 50%;
+    height: 128px;
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: .2s;
+}
+
+div.contact_cards div h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 42px;
+    margin: 10px 10px 0;
+    text-align: center;
+}
+
+div.contact_cards div h2 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+    margin: 16px 10px 0;
+    text-align: center;
+}
+
+div.contact_cards div h4 {
+    font-family: 'PT Serif', serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 0 10px 0;
+    text-align: center;
+}
+
+div.contact_cards div hr {
+    border: 2px rgb(0, 132, 255) solid;
+    width: 40px;
+}
+
+div.contact_cards div p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 0 0 6px;
+    text-align: center;
+}
+
+div.contact_cards div a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: rgb(39, 39, 39);
+    padding: 40px 40px 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+footer div h1 {
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+footer div hr {
+    border: none;
+    border: 2px rgb(0, 132, 255) solid;
+    width: 50px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+footer div a {
+    clear: both;
+    font-family: 'Lato', sans-serif;
+    color: rgb(216, 216, 216);
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    margin: 6px 0;
+}
+
+footer div a span {
+    text-transform: uppercase;
+    color: rgb(0, 132, 255);
+    font-size: 16px;
+}
+
+footer div a i {
+    margin-right: 4px;
+    color: rgb(0, 132, 255);
+}
