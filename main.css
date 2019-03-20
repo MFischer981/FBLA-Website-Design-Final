@@ -27,6 +27,20 @@ nav a {
     border-radius: 50px;
 }
 
+nav span {
+    color: rgb(39, 39, 39);
+    padding: 2px 20px;
+    margin: 8px 0;
+    float: left;
+    display: none;
+    text-decoration: none;
+    transition: .2s;
+    border-radius: 50px;
+    font-size: 28px;
+    background: rgb(0, 132, 255);
+    color: white;
+}
+
 nav a#booking {
     color: white;
     background: rgb(0, 132, 255);
@@ -49,7 +63,7 @@ nav a.social i {
     margin: 0;
 }
 
-nav a:hover {
+nav a:hover, nav span:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -253,8 +267,11 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
  
 section#pricing {
+    margin: 20px calc(auto + 20px);
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -266,11 +283,16 @@ section div {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     transition: .2s;
+    transition: transform 0s;
 }
 
 section#pricing>div {
     margin: 40px 0;
     background: white;
+}
+
+section#faq>div {
+    overflow: hidden;
 }
 
 section#pricing div:nth-last-of-type(2) {
@@ -352,7 +374,20 @@ section#pricing>div p {
 }
 
 section#faq>div p {
-    display: none;
+    opacity: 0;
+    position: relative;
+    top: 200px;
+    height: 0px;
+    transition: .6s;
+}
+
+
+
+section#faq>div p.show {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    height: auto;
 }
 
 section div h4 {
@@ -371,10 +406,9 @@ section#pricing>div h4 {
 }
 
 
-section div a, section div button {
+section div a, section div button, section#faq div i {
     border: 0;
     display: inline-block;
-    font-family: 'Lato', sans-serif;
     color: rgb(0, 132, 255);
     font-size: 18px;
     text-decoration: none;
@@ -385,6 +419,35 @@ section div a, section div button {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 10px 20px 30px;
     transition: .2s;
+}
+
+section div a, section div button {
+    font-family: 'Lato', sans-serif;
+}
+
+
+section#faq>div {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+
+section#faq div i {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+}
+
+section#faq div i.click {
+    transform: scale(-1) translateX(50%);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 section#pricing>div a {
@@ -540,4 +603,78 @@ footer div a span {
 footer div a i {
     margin-right: 4px;
     color: rgb(0, 132, 255);
+}
+
+section#faq div.center {
+    overflow: auto;
+    margin: 0;
+}
+
+section#faq div i.click {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1260px) {
+    div.contact_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer div:nth-of-type(2), footer div:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section#pricing {
+        grid-template-columns: 1fr;
+    }
+
+    section#pricing div:nth-of-type(2) {
+        transform: scale(1);
+    }
+
+    nav a.social {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    div.image {
+        height: 400px;
+        display: block;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    div.contact_cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav span {
+        display: inline-block;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
 }

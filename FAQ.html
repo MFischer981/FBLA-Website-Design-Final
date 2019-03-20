@@ -9,41 +9,56 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="popup.css">
     <script src="main.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body>
-        <script>
-                AOS.init();
-         </script>
+<body id="body">
+    <div class="overlay">
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Service</a>
-        <a href="#">Contact</a>
-        <a href="#">FAQ</a>
-        <a href="#" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
-    </nav>
+            <span><i class="fas fa-bars"></i></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="#" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="#" class="social"><i class="fab fa-youtube-square"></i></a>
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter-square"></i></a> 
+        </nav>
     <header>
-            <h1  data-aos="fade-right">Define Your Own Success With Accuracy Accounting</h1>
-            <p  data-aos="fade-right" data-aos-delay="200">Our mission is to empower small business owners as they grow their dream into a reality.</p>
-            <a href="#"  data-aos="fade-right" data-aos-delay="400">Learn More</a>
-        </header>
-        <article data-aos="fade-up" data-aos-delay="400">
+        <h1 data-aos="fade-right">Define Your Own Success With Accuracy Accounting</h1>
+        <p data-aos="fade-right" data-aos-delay="200">Our mission is to empower small business owners as they grow
+            their dream into a reality.</p>
+        <a href="#" data-aos="fade-right" data-aos-delay="400">Learn More</a>
+    </header>
+    <article data-aos="fade-up" data-aos-delay="400">
         <div class="image" id="startups">
         </div>
         <div class="content">
-            <h1>Our Story: Helping Startups Get Started</h1>
-            <p>In 2003 two friends and GCU Business Graduates, Leanna Murray and Indiana Ortega founded
-                Accuracy
-                Accounting in Phoenix, Arizona. Leanna and Indiana's parents had been a small business owners
-                in
-                Scottsdale, AZ since before either of them were born. Leanna and Indiana were passionate about
-                helping small businesses grow. Since 2003 Accuracy Accounting has helped over 1200 small
-                business
-                owners in grow their companies.</p>
+            <h1>Contact Us</h1>
+            <form action="">
+                <label for="#">Name</label>
+                <input type="text" placeholder="Your Name">
+                <label for="#">Company</label>
+                <input type="text" placeholder="Your Company Name">
+                <label for="#">Phone Number</label>
+                <input type="text" placeholder="Your Phone Number">
+                <label for="#">Email Address</label>
+                <input type="text" placeholder="Email Address">
+                <label for="#">Comments</label>
+                <textarea name="" id="" placeholder="Please leave any questions or comments here."></textarea>
+                <button>Submit</button>
+            </form>
         </div>
     </article>
 
@@ -52,145 +67,162 @@
         <p>Explore our services and learn what we can do to help your business thrive and grow.</p>
     </aside>
     <section id="faq">
-        <div>
-                <div class="image"></div>
-            <h1>Why do I need Accuracy Accounting's services?</h1>
-            <button>Read More <i class="fas fa-angle-right"></i></button>
+        <div class="question">
+            <div class="image"></div>
+            <h1>Why should I choose a monthly accountant vs. less frequent methods of accounting?</h1>
+            <p id="body">Monthly accounting services provide substantially more value than only an annual service. If an accountant only sees your numbers once a year, it is too late to offer advice that would have helped to make that year more profitable. And definitely too late to lower your tax liability for a year that is already over with. This blog post explains five ways monthly accounting pays for itself: 1) It saves you time, 2) You get regular business profitability advice, 3)You have peace of mind that your finances are handled, 4) Your tax liability is reduced, 5) You can make more proactive financial decisions. Read more here.</p>
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
         </div>
-        <div>
-                <div class="image"></div>
-            <h1>What does our accounting firm do?</h1>
-            <p>The IRS is constantly revising and changing tax codes. That is just one of many reasons why retaining the services of an outside accounting for both regular accounting/payroll and taxes is a great ideas. Your certified, professional accountant will be up to date on what can and can’t be written off as a tax deductible. They can also help you maximize the potential benefit of your purchases and expenses when you’re filing your taxes. Typically, purchases and expenses deemed necessary can be treated as tax deductible.</p>
-            <button>Read More <i class="fas fa-angle-right"></i></button>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How can I transition from in-house to outsourced accounting?</h1>
+            <p>Transitions are tricky, but preparing your business to switch to an outsourced accountant doesn’t have to be hard. Make your new financial partner is a good fit, plan ahead and be sure to budget enough time, set goals, and be mindful of potential obstacles. Read more tips here.</p>
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
         </div>
-        <div>
-                <div class="image"></div>
-            <h1>What does our bookkeeping service entail?</h1>
-            <p>It includes accounts receivable, accounts payable, bank reconciliation, credit sales reconciliation, financial statement preparation and preparation of accounting write ups. Additional services offered include payroll, small business tax preparation and loan package preparation. We will also handle tasks that are required by the CPA for you.</p>
-            <button>Read More <i class="fas fa-angle-right"></i></button>
+        <div class="question">
+            <div class="image"></div>
+            <h1>What are the best ways to separate my business and personal finances?</h1>
+            <p>Mixing business and personal finances is a major problem for small-business owners. Not only does it create headaches at tax time, it also makes it difficult to track the profitability of your company. Worse-case scenario: you get audited by the IRS and end up with major fines. Keeping these two parts of your money life separate is essential to preserve your sanity and to ensure you have a sustainable business model.</p>
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
         </div>
-        <div>
-                <div class="image"></div>
-            <h1>How do I know what expenses are tax deductible?</h1>
-            <button>Read More <i class="fas fa-angle-right"></i></button>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How can I tell if I've outgrown my current accounting firm?</h1>  
+            <p>As your business expands, your financial needs and concerns are going to be dramatically different than they were even a year ago. There are three tell-tale signs you’ve outgrown your firm: 1) They can’t help you when you need to borrow money or expand your business, 2) They can’t provide advice for your business plan or expansion goals, 3) They file something incorrectly because it was too complex.</p>
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
         </div>
-        <div>
-                <div class="image"></div>
-            <h1>Why should you choose us?</h1>
-            <button>Read More <i class="fas fa-angle-right"></i></button>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How does better accounting affect my bottom line?</h1>
+            <p>Many small- and mid-size businesses fail to adequately measure and manage their finances, even though poor financial management is a major cause of business failure. If you don’t have good financial practices in place, your business could suffer in a number of ways, including lost revenue, insufficient tax planning, and missed financial opportunities. A great monthly accounting service will handle your profit and loss statements, monthly balance sheets, and regular account reconciliation to help you take back control of your finances without much effort on your part.</p>            
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How can I make my new business financially successful?</h1>
+            <p>It depends. We’d be happy to have a brief consultation to provide personalized financial advice for your new business, but at a high level, you need three things: a strategic plan, consistent accounting records, and expert advice. Read more about these three elements of financial success here.</p>
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>What questions should I ask when choosing the right accountant for my business?</h1>
+            <p>Working with a professional accounting service offers you security and peace of mind. It’s a smart business choice for your company, but you need to decide which accountant or accounting firm is right for you.</p>            
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div id="question">
+            <div class="image"></div>
+            <h1>How much does monthly accounting cost? What factors go into the pricing?</h1>
+            <p>Pricing for our monthly accounting services varies by your company’s needs. Our pricing is not based on the size of your company, rather our pricing model is based on your company’s accounting activity and the complexity of your financial statements. We will work with you to arrive at an affordable, fixed monthly fee. Our fixed-monthly fees are all-inclusive.</p>            
+            <i onclick="showAnswer()"  class="fas fa-chevron-circle-up"></i>
         </div>
     </section>
 
     <aside>
-            <h1>Pricing</h1>
-            <p>Find a plan that fits your business' needs and budget, or get a customized quote.</p>
-            <a href="#">Get A Quote  <i class="fas fa-angle-right"></i></a>
-        </aside>
-        <section id="pricing">
-            <div>
-                <div class="image"></div>
-                <h4>Our most affordable plan</h4>
-                <h1>Startup</h1>
-                <h2>Payroll for Up to 25 Employees</h2>
-                <h2>Bookkeeping for Up to $1M in Revenue</h2>
-                <h2>Annual Company Wide Auditing</h2>
-                <h2>Detailed Annual Reports & Quarterly Summaries</h2>
-                <h2>Tax Prep and Filing with CPAs</h2>
-                <h3>$125<span>/mo</span></h3>
-                <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div>
-                <div class="image"></div>
-                <h4>Our most popular plan</h4>
-                <h1>Small Business</h1>
-                <h2>Payroll for Up to 100 Employees</h2>
-                <h2>Bookkeeping for Up to $10M in Revenue</h2>
-                <h2>Semi-Annual Company Wide Auditing</h2>
-                <h2>Detailed Semi-Annual Reports & Quarterly Summaries</h2>
-                <h2>Tax Prep and Filing with CPAs</h2>
-                <h3>$350<span>/mo</span></h3>
-                <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div>
-                <div class="image"></div>
-                <h4>Our most inclusive plan</h4>
-                <h1>Business Plus</h1>
-                <h2>Payroll for Up to 250 Employees</h2>
-                <h2>Bookkeeping for Up to $100M in Revenue</h2>
-                <h2>Quarterly Company Wide Auditing</h2>
-                <h2>Detailed Quarterly Reports & Quarterly Summaries</h2>
-                <h2>Tax Specialist assigned to your company</h2>
-                <h3>$750<span>/mo</span></h3>
-                <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-            </div>
-        </section>
+        <h1>Pricing</h1>
+        <p>Find a plan that fits your business' needs and budget, or get a customized quote.</p>
+        <a href="#">Get A Quote <i class="fas fa-angle-right"></i></a>
+    </aside>
+    <section id="pricing">
+        <div>
+            <div class="image"></div>
+            <h4>Our most affordable plan</h4>
+            <h1>Startup</h1>
+            <h2>Payroll for Up to 25 Employees</h2>
+            <h2>Bookkeeping for Up to $1M in Revenue</h2>
+            <h2>Annual Company Wide Auditing</h2>
+            <h2>Detailed Annual Reports & Quarterly Summaries</h2>
+            <h2>Tax Prep and Filing with CPAs</h2>
+            <h3>$125<span>/mo</span></h3>
+            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div>
+            <div class="image"></div>
+            <h4>Our most popular plan</h4>
+            <h1>Small Business</h1>
+            <h2>Payroll for Up to 100 Employees</h2>
+            <h2>Bookkeeping for Up to $10M in Revenue</h2>
+            <h2>Semi-Annual Company Wide Auditing</h2>
+            <h2>Detailed Semi-Annual Reports & Quarterly Summaries</h2>
+            <h2>Tax Prep and Filing with CPAs</h2>
+            <h3>$350<span>/mo</span></h3>
+            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div>
+            <div class="image"></div>
+            <h4>Our most inclusive plan</h4>
+            <h1>Business Plus</h1>
+            <h2>Payroll for Up to 250 Employees</h2>
+            <h2>Bookkeeping for Up to $100M in Revenue</h2>
+            <h2>Quarterly Company Wide Auditing</h2>
+            <h2>Detailed Quarterly Reports & Quarterly Summaries</h2>
+            <h2>Tax Specialist assigned to your company</h2>
+            <h3>$750<span>/mo</span></h3>
+            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
+        </div>
+    </section>
     <footer>
-        <div>
-            <h1>About</h1>
-            <hr>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Team</a>
-            <a href="#">Contact</a>
-            <a href="#">FAQ</a>
-            <br>
-            <h1>Services</h1>
-            <hr>
-            <a href="#">Bookkeeping</a>
-            <a href="#">Tax Prep & Filing</a>
-            <a href="#">Auditing</a>
-            <a href="#">Reports</a>
-        </div>
-
-        <div>
-            <h1>Support</h1>
-            <hr>
-            <a href="#">Site Map</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">IRS Information</a>
-            <a href="#">Support</a>
-            <br>
-            <h1>Tax Reform</h1>
-            <hr>
-            <a href="#">Tax Reform</a>
-            <a href="#">Tax Cuts and Jobs Act</a>
-            <a href="#">Small Business Benefits</a>
-        </div>
-        <div>
-            <h1>Brand</h1>
-            <hr>
-            <a href="#">Equal Opportunity Provider</a>
-            <a href="#">Diversity Commitment</a>
-            <a href="#">Press</a>
-            <a href="#">Public Relations</a>
-            <a href="">Brand Assets</a>
-            <a href="#">Careers</a>
-            <a href="">Philanthropy</a>
-        </div>
-        <div>
-            <h1>Connect</h1>
-            <hr>
-            <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
-            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-            <a href="#"><i class="fab fa-youtube-square"></i>YouTube</a>
-            <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
-        </div>
-        <div>
-            <h1>Contact Us</h1>
-            <hr>
-            <a href="#"><i class="fas fa-phone"></i>Call<br>555-555-5555</a>
-            <br>
-            <a href="#"><i class="fas fa-envelope"></i>Email<br>help@accuracy.com</a>
-            <br>
-            <a href="#"><i class="fas fa-map-marker-alt"></i>Locations</a>
-            <a href="#">Phoenix Office <br> 3546 N 35th Ave, <br> Phoenix, AZ 67105</a>
-            <a href="#">Tuscon Office <br> 2657 N 22nd St, <br> Tuscon, AZ 26911</a>
-            <a href="#">Las Vegas Office <br> 9768 N 126th Ln, <br> Las Vegas, NV 48127</a>
-        </div>
-    </footer>
+            <div>
+                <h1>About</h1>
+                <hr>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Team</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+                <h1>Services</h1>
+                <hr>
+                <a href="#">Bookkeeping</a>
+                <a href="#">Tax Prep & Filing</a>
+                <a href="#">Auditing</a>
+                <a href="#">Reports</a>
+            </div>
+    
+            <div>
+                <h1>Support</h1>
+                <hr>
+                <a href="#">Site Map</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">IRS Information</a>
+                <a href="#">Support</a>
+                <h1>Tax Reform</h1>
+                <hr>
+                <a href="#">Tax Reform</a>
+                <a href="#">Tax Cuts and Jobs Act</a>
+                <a href="#">Small Business Benefits</a>
+            </div>
+            <div>
+                <h1>Brand</h1>
+                <hr>
+                <a href="#">Equal Opportunity Provider</a>
+                <a href="#">Diversity Commitment</a>
+                <a href="#">Press</a>
+                <a href="#">Public Relations</a>
+                <a href="">Brand Assets</a>
+                <a href="#">Careers</a>
+                <a href="">Philanthropy</a>
+            </div>
+            <div>
+                <h1>Connect</h1>
+                <hr>
+                <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-youtube-square"></i>YouTube</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+            <div>
+                <h1>Contact Us</h1>
+                <hr>
+                <a href="#"><i class="fas fa-phone"></i>Call<br>555-555-5555</a>
+                <a href="#"><i class="fas fa-envelope"></i>Email<br>help@accuracy.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Locations</a>
+                <a href="#"><span>Phoenix Office</span> <br> 3546 N 35th Ave, <br> Phoenix, AZ 67105</a>
+                <a href="#"><span>Tucson Office</span> <br> 2657 N 22nd St, <br> Tuscon, AZ 26911</a>
+                <a href="#"><span>Las Vegas Office</span> <br> 9768 N 126th Ln, <br> Las Vegas, NV 48127</a>
+            </div>
+        </footer>
 </body>
 
 </html>
