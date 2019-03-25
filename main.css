@@ -431,7 +431,6 @@ section#faq>div {
     padding-bottom: 120px;
 }
 
-
 section#faq div i {
     display: block;
     margin-left: 0;
@@ -606,8 +605,8 @@ footer div a i {
 }
 
 section#faq div.center {
-    overflow: auto;
-    margin: 0;
+    overflow: hidden;
+    padding-bottom: 0px;
 }
 
 section#faq div i.click {
@@ -671,10 +670,15 @@ section#faq div i.click {
     footer {
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media screen and (max-width: 524px) {
     footer {
         grid-template-columns: 1fr;
     }
+}
+
+.opened {
+    padding-bottom: 0;
 }
