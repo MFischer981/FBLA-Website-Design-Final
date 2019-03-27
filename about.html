@@ -18,26 +18,42 @@
         <script>
                 AOS.init();
          </script>
-    <nav>
-            <span><i class="fas fa-bars"></i></span>
+    <div class="mobile_nav" id="mobile_menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="service.html">Service</a>
             <a href="contact.html">Contact</a>
             <a href="FAQ.html">FAQ</a>
-            <a href="#" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
-            <a href="#" class="social"><i class="fab fa-youtube-square"></i></a>
-            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" class="social"><i class="fab fa-twitter-square"></i></a> 
+            <a href="booking.html" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <div class="social_icons_mobile">
+                <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+        <nav>
+            <span onclick="showMenu()"><i class="fas fa-bars"></i></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="booking.html" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
         </nav>
-    <header>
-            <h1  data-aos="fade-right">Define Your Own Success With Accuracy Accounting</h1>
-            <p  data-aos="fade-right" data-aos-delay="200">Our mission is to empower small business owners as they grow their dream into a reality.</p>
-            <a href="#"  data-aos="fade-right" data-aos-delay="400">Learn More</a>
+    <header id="about">
+            <h1  data-aos="fade-right">Discover the Power of Accurate Accounting</h1>
+            <p  data-aos="fade-right" data-aos-delay="200">Accuracy Accounting has been serving Arizona small businesses for over 15 years.</p>
+            <a href="#top"  data-aos="fade-right" data-aos-delay="400">Learn More</a>
         </header>
         <article data-aos="fade-up" data-aos-delay="400">
-        <div class="image" id="startups">
+        <div class="image" id="about">
+            <div class="tag" id="top"></div>
+            <h1>IndieGames <br> Glendale, AZ</h1>
         </div>
         <div class="content">
             <h1>Our Story: Helping Startups Get Started</h1>
@@ -46,13 +62,13 @@
                 Accounting in Phoenix, Arizona. Leanna and Indiana's parents had been a small business owners
                 in
                 Scottsdale, AZ since before either of them were born. Leanna and Indiana were passionate about
-                helping small businesses grow. Since 2003 Accuracy Accounting has helped over 1200 small
+                helping small businesses grow. Since 2003 Accuracy Accounting has helped over 1,200 small
                 business
                 owners in grow their companies.</p>
         </div>
     </article>
 
-    <aside id="contact">
+    <aside id="team">
         <h1>Our Team</h1>
         <p>Our team at Accuracy Accounting is made up of the best and brightest in the industry. They are committed to helping your business thrive.</p>
     </aside>
@@ -91,57 +107,55 @@
         <p>Explore our services and learn what we can do to help your business thrive and grow.</p>
     </aside>
     <section>
-        <div>
-            <div class="image"></div>
-            <h1>Bookkeeping</h1>
-            <p>We help you organize and keep track of your small business financial records. Our team of certified CPAs
-                can help ensure that your records are kept up to date and accurate. Bookkeeping also helps you get a
-                better picture of your finances.</p>
-            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-        </div>
-        <div>
-            <div class="image"></div>
-            <h1>Taxes</h1>
-            <p>As a small business owner it can be difficult to file your taxes. Our CPAs will help you make the most
-                out of your money so you get the biggest return on your taxes. We also offer tax prep services and free
-                courses on how to use Quickbooks.</p>
-            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-        </div>
-        <div>
-            <div class="image"></div>
-            <h1>Auditing</h1>
-            <p>Having an annual audit is very important but can also be tedious and time consuming. However, with the
-                help of our trained CPAs we can make the process of auditing quick, and painless, which saves your
-                small business time and money.</p>
-            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-        </div>
-        <div>
-            <div class="image"></div>
-            <h1>Reports</h1>
-            <p>At the end of the business year or quarter it is crucial that you reflect on how your comapny is
-                performing. We will produce high quality annual or quarterly reports so that you can understand where
-                your efforts and money are best spent.</p>
-            <a href="#">Learn More <i class="fas fa-angle-right"></i></a>
-        </div>
-    </section>
+            <div data-aos="fade-up">
+                <div class="image" id="bookkeeping"></div>
+                <h1>Bookkeeping</h1>
+                <p>We help you organize and keep track of your small business financial records. Our team of certified CPAs
+                    can help ensure that your records are kept up to date and accurate. Bookkeeping also helps you get a
+                    better picture of your finances.</p>
+                <a href="service.html#service1">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div data-aos="fade-up">
+                <div class="image" id="taxes"></div>
+                <h1>Taxes</h1>
+                <p>As a small business owner it can be difficult to file your taxes. Our CPAs will help you make the most
+                    out of your money so you get the biggest return on your taxes. We also offer tax prep services and free
+                    courses on how to use Quickbooks.</p>
+                <a href="service.html#service2">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div data-aos="fade-up">
+                <div class="image" id="audit"></div>
+                <h1>Auditing</h1>
+                <p>Having an annual audit is very important but can also be tedious and time consuming. However, with the
+                    help of our trained CPAs we can make the process of auditing quick, and painless, which saves your
+                    small business time and money.</p>
+                <a href="service.html#service3">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div data-aos="fade-up">
+                <div class="image" id="report"></div>
+                <h1>Reports</h1>
+                <p>At the end of the business year or quarter it is crucial that you reflect on how your comapny is
+                    performing. We will produce high quality annual or quarterly reports so that you can understand where
+                    your efforts and money are best spent.</p>
+                <a href="service.html#service4">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+        </section>
     <footer>
             <div>
                 <h1>About</h1>
                 <hr>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Service</a>
-                <a href="#">Team</a>
-                <a href="#">Contact</a>
-                <a href="#">FAQ</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact</a>
+                <a href="FAQ.html">FAQ</a>
                 <h1>Services</h1>
                 <hr>
-                <a href="#">Bookkeeping</a>
-                <a href="#">Tax Prep & Filing</a>
-                <a href="#">Auditing</a>
-                <a href="#">Reports</a>
+                <a href="service.html#service1">Bookkeeping</a>
+                <a href="service.html#service2">Tax Prep & Filing</a>
+                <a href="service.html#service3">Auditing</a>
+                <a href="service.html#service4">Reports</a>
             </div>
-    
             <div>
                 <h1>Support</h1>
                 <hr>
@@ -170,21 +184,21 @@
             <div>
                 <h1>Connect</h1>
                 <hr>
-                <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
-                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-                <a href="#"><i class="fab fa-youtube-square"></i>YouTube</a>
-                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i>YouTube</a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LinkedIn</a>
             </div>
             <div>
                 <h1>Contact Us</h1>
                 <hr>
-                <a href="#"><i class="fas fa-phone"></i>Call<br>555-555-5555</a>
-                <a href="#"><i class="fas fa-envelope"></i>Email<br>help@accuracy.com</a>
-                <a href="#"><i class="fas fa-map-marker-alt"></i>Locations</a>
-                <a href="#"><span>Phoenix Office</span> <br> 3546 N 35th Ave, <br> Phoenix, AZ 67105</a>
-                <a href="#"><span>Tucson Office</span> <br> 2657 N 22nd St, <br> Tuscon, AZ 26911</a>
-                <a href="#"><span>Las Vegas Office</span> <br> 9768 N 126th Ln, <br> Las Vegas, NV 48127</a>
+                <a href="tel: 555-555-5555"><i class="fas fa-phone"></i>Call<br>555-555-5555</a>
+                <a href="mailto: example@accuracy.com"><i class="fas fa-envelope"></i>Email<br>help@accuracy.com</a>
+                <a><i class="fas fa-map-marker-alt"></i>Locations</a>
+                <a href="https://www.google.com/maps"><span>Phoenix Office</span> <br> 3546 N 35th Ave, <br> Phoenix, AZ 67105</a>
+                <a href="https://www.google.com/maps"><span>Tucson Office</span> <br> 2657 N 22nd St, <br> Tuscon, AZ 26911</a>
+                <a href="https://www.google.com/maps"><span>Las Vegas Office</span> <br> 9768 N 126th Ln, <br> Las Vegas, NV 48127</a>
             </div>
         </footer>
 </body>
