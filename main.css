@@ -131,6 +131,12 @@ header#faq {
     background-size: cover;
 }
 
+header#sitemap {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_sitemap.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
 header#credits {
     background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_credits.jpg");
     background-position: center;
