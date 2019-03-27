@@ -21,6 +21,12 @@
     <script>
         AOS.init();
     </script>
+        <div class="faq_popup" id="contact_popup">
+            <i class="fas fa-times-circle" onclick="closeContactPop()"></i>
+            <h1>Thank You!</h1>
+            <p class="short">Please allow us 24 hours to get back to you via email and phone call. If you'd like to book an appointment use the link below to access our online booking system.</p>
+            <button onclick="closeContactPop()" id="close">Close</button> <a href="booking.html">Book Now</a>
+        </div>
     <div class="mobile_nav" id="mobile_menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -62,7 +68,6 @@
             <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
             <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a> 
-            <form action="">
                 <label for="">Name</label>
                 <input type="text" placeholder="Name">
                 <label for="">Company</label>
@@ -73,8 +78,7 @@
                 <input type="text" placeholder="Email Address">
                 <label for="">Comments</label>
                 <textarea name="" id="" placeholder="Please leave any questions or comments here."></textarea>
-                <button>Submit</button>
-            </form>
+                <button onclick="showContactPop()">Submit</button>
         </div>
     </article>
     <aside id="contact">

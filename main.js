@@ -9,7 +9,6 @@ function resizeMenu() {
 
 // Open FAQ
 function showFAQ(e) {
-    event.target.classList.toggle('flip');
     document.getElementById('faq_popup').classList.toggle('popup_show');
     document.getElementById('answer').textContent = faqAnswer[e];
     document.getElementById('question').textContent = faqQuestion[e];
@@ -17,6 +16,14 @@ function showFAQ(e) {
 
 function closeFAQ() {
     document.getElementById('faq_popup').classList.remove('popup_show')
+}
+
+function showContactPop() {
+    document.getElementById('contact_popup').classList.toggle('popup_show');
+}
+
+function closeContactPop() {
+    document.getElementById('contact_popup').classList.remove('popup_show')
 }
 
 function calcQuote() {

@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -100,38 +101,38 @@ nav a#booking:hover {
 }
 
 header {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1531901783755-825e82c0d762?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header.jpg");
     background-position: center;
     background-size: cover;
     padding: 100px 12vw 200px;
 }
 
 header#about {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1496902526517-c0f2cb8fdb6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_about.jpg");
     background-position: center;
     background-size: cover;
 }
 
 header#service {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_service.jpg");
     background-position: center;
     background-size: cover;
 }
 
 header#contact {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1525182008055-f88b95ff7980?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_about.jpg");
     background-position: center;
     background-size: cover;
 }
 
 header#faq {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1505608287685-5d03198b5312?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_faq.jpg");
     background-position: center;
     background-size: cover;
 }
 
 header#credits {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1552028650-e8207c3026f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_credits.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -183,7 +184,7 @@ article {
 }
 
 article#contact {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.75)), url("https://images.pexels.com/photos/1446316/pexels-photo-1446316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.75)), url("article_contact.jpeg");
     background-position: center left;
     background-size: cover;
     display: block;
@@ -191,7 +192,7 @@ article#contact {
 }
 
 article#credits {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.75)), url("https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.75)), url("article_credits.jpeg");
     background-position: center left;
     background-size: cover;
 }
@@ -203,12 +204,12 @@ main.services {
 }
 
 main.commit {
-    background: linear-gradient(to top,rgb(216, 216, 216), rgb(240, 240, 240));
+    background: linear-gradient(to top, rgb(216, 216, 216), rgb(240, 240, 240));
     padding: 40px 20px;
 }
 
 article.service {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("https://images.pexels.com/photos/1446316/pexels-photo-1446316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("article_contact.jpeg");
     background-position: center left;
     background-size: cover;
     display: block;
@@ -219,7 +220,7 @@ article.service {
 
 article .socialbox {
     position: relative;
-text-align: center;
+    text-align: center;
 }
 
 article.service .content a.social {
@@ -234,37 +235,37 @@ article .socialbox i {
 
 
 article.service#bookkeeping {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1302&q=80");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("bookkeeping.jpg");
     background-position: center left;
     background-size: cover;
 }
 
 article.service#taxes {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("taxes.jpg");
     background-position: center left;
     background-size: cover;
 }
 
 article.service#audits {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1470173274384-c4e8e2f9ea4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("audits.jpg");
     background-position: center left;
     background-size: cover;
 }
 
 article.service#reports {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1291&q=80");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("reports.jpg");
     background-position: center left;
     background-size: cover;
 }
 
 article.service#arrow {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1523169116197-5c1b5d4d0d96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("arrow.jpg");
     background-position: center center;
     background-size: cover;
 }
 
 article.service#app {
-    background: linear-gradient(45deg, rgba(0, 132, 255, 1), rgba(39, 39, 39, .8)), url("https://images.unsplash.com/photo-1549782680-6c0bc6c40c90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=692&q=80");
+    background: linear-gradient(45deg, rgba(0, 132, 255, 1), rgba(39, 39, 39, .8)), url("app.jpg");
     background-position: top center;
     background-size: 200%, cover;
     animation: background 3s infinite alternate;
@@ -274,6 +275,7 @@ article.service#app {
     0% {
         background-position: top left, center center;
     }
+
     100% {
         background-position: bottom right, center center;
     }
@@ -351,7 +353,7 @@ article div.image h1 {
 }
 
 article div.image#startups {
-    background: url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: url("startup1.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -359,7 +361,7 @@ article div.image#startups {
 }
 
 article div.image#about {
-    background: url("https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=815&q=80");
+    background: url("startup2.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -367,7 +369,7 @@ article div.image#about {
 }
 
 article div.image#service {
-    background: url("https://images.unsplash.com/photo-1437914983566-976d85602771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: url("startup3.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -391,7 +393,8 @@ article div.content h1:not(:first-of-type) i {
     margin-top: 48px;
 }
 
-div.content.center h1, div.content.center p {
+div.content.center h1,
+div.content.center p {
     text-align: center;
     margin: 0 auto;
 }
@@ -423,6 +426,13 @@ article div.content a {
     transition: .2s;
 }
 
+article div.content a.center {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 article div.content a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -442,7 +452,7 @@ article div.content a.social:hover {
     transform: scale(1.1);
 }
 
-article form label {
+article label {
     display: block;
     font-family: 'Lato',
         sans-serif;
@@ -451,7 +461,7 @@ article form label {
     margin: 6px 0 4px;
 }
 
-article form input {
+article input {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border: 0;
     outline: none;
@@ -463,7 +473,7 @@ article form input {
     font-size: 18px;
 }
 
-article form textarea {
+article textarea {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border: 0;
     outline: none;
@@ -478,7 +488,7 @@ article form textarea {
     width: 80%;
 }
 
-article form button {
+article button {
     display: inline-block;
     font-family: 'Lato',
         sans-serif;
@@ -495,33 +505,33 @@ article form button {
     transition: .2s;
 }
 
-article form button:hover {
+article button:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 aside {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("aside.jpg");
     background-position: center;
     background-size: cover;
     padding: 30px 12vw 110px;
 }
 
 aside#contact {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1532356884227-66d7c0e9e4c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("contactaside.jpg");
     background-position: center;
     background-size: cover;
     padding: 30px 12vw 110px;
 }
 
 aside#team {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("teamaside.jpg");
     background-position: center;
     background-size: cover;
     padding: 30px 12vw 110px;
 }
 
 aside#price {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("asideprice.jpg");
     background-position: center;
     background-size: cover;
     padding: 30px 12vw 110px;
@@ -609,7 +619,7 @@ section#pricing div:nth-last-of-type(2) {
 }
 
 section div.image {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1531901783755-825e82c0d762?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("section.jpg");
     background-position: center;
     background-size: cover;
     min-height: 320px;
@@ -619,43 +629,43 @@ section div.image {
 }
 
 section div.image#bookkeeping {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1302&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("bookkeeping.jpg");
     background-position: center;
     background-size: cover;
 }
 
 section div.image#taxes {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("taxes.jpg");
     background-position: center;
     background-size: cover;
 }
 
 section div.image#audit {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1470173274384-c4e8e2f9ea4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("audits.jpg");
     background-position: center;
     background-size: cover;
 }
 
 section div.image#report {
-    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1291&q=80");
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("reports.jpg");
     background-position: center;
     background-size: cover;
 }
 
 section div.image#smbiz {
-    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1515678916313-2263ebfad5cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("smbiz.jpg");
     background-position: center;
     background-size: cover;
 }
 
 section div.image#mdbiz {
-    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1522165078649-823cf4dbaf46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("mdbiz.jpg");
     background-position: center;
     background-size: cover;
 }
 
 section div.image#lrgbiz {
-    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1462899006636-339e08d1844e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("lrgbiz.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -785,9 +795,6 @@ section#faq div i {
     cursor: pointer;
 }
 
-.flip {
-    transform: translateX(-50%);
-}
 
 section#pricing>div a {
     display: inline-block;
@@ -1053,6 +1060,14 @@ footer div a i {
     margin: 10px 0;
 }
 
+.faq_popup p.short {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
 .faq_popup i {
     display: inline-block;
     margin-left: 0;
@@ -1103,7 +1118,8 @@ footer div a i {
     width: 80%;
 }
 
-.faq_popup button {
+.faq_popup button,
+.faq_popup a {
     display: inline-block;
     font-family: 'Lato',
         sans-serif;
@@ -1119,6 +1135,10 @@ footer div a i {
     border: 0;
 }
 
+.faq_popup button#close {
+    margin-top: 0;
+}
+
 .faq_popup .price h1 {
     font-size: 48px;
     color: rgb(0, 132, 255);
@@ -1130,7 +1150,7 @@ footer div a i {
     font-size: 24px;
     font-family: 'Lato',
         sans-serif;
-        display: inline-block;
+    display: inline-block;
 }
 
 @media screen and (max-width: 1260px) {
@@ -1212,8 +1232,8 @@ footer div a i {
         padding: 0;
     }
 
-    article div.content h1, 
-    header h1  {
+    article div.content h1,
+    header h1 {
         font-size: 32px;
     }
 
