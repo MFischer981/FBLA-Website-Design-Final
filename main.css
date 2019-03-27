@@ -963,7 +963,7 @@ footer div a i {
     display: block;
     position: fixed;
     left: 0px;
-    top: -100%;
+    top: -150%;
     width: 100%;
     padding: 20px;
     z-index: 100;
@@ -1197,6 +1197,9 @@ footer div a i {
         grid-template-columns: 1fr 1fr;
     }
 
+    article.service#app p {
+        margin-top: -30px;
+    }
 }
 
 @media screen and (max-width: 624px) {
@@ -1242,7 +1245,13 @@ footer div a i {
     }
 
     article.service#app img {
-        margin-left: -30px;
+        position: relative;
+        transform: translateX(-20%);
     }
 }
 
+@media screen and (max-width: 400px) {
+    article.service#app p {
+        margin-top: -120px;
+    }
+}
